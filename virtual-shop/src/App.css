@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.fondo_amarillo {
+  background: rgb(245 235 210) !important;
+
+}
+
+.link_header {
+  color: #4f2414;
+  font-weight: bold;
+}
+
+.fondo_app {
+  background-color: #d72300;
+}
+
+.fondo_footer {
+  background-color: #502314;
+}
