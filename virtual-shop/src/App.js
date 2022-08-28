@@ -2,7 +2,7 @@ import './App.css';
 import Destacados from './componentes/Destacados';
 import Footer from './componentes/footer';
 import Header from './componentes/Header';
-import PromoAPP from './componentes/PromoAPP';
+import Promoapp from './componentes/Promoapp';
 import Cupones from './componentes/Promos';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <hr />
     <Destacados />
     <Cupones />
-    <PromoAPP />
+    <Promoapp />
     <Footer />
     
    </div>

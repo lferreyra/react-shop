@@ -4,19 +4,19 @@
 }
 
 .fondo_amarillo {
-  background: rgb(245 235 210) !important;
+  background: white !important;
 
 }
 
 .link_header {
-  color: #4f2414;
+  color: black;
   font-weight: bold;
 }
 
 .fondo_app {
-  background-color: #d72300;
+  background-color: pink;
 }
 
 .fondo_footer {
-  background-color: #502314;
+  background-color: black;
 }

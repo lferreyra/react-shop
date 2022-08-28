@@ -1,5 +1,5 @@
 import React from "react";
-import imagen from "./imagenes/hero1.jpg";
+import imagen from "./imagenes/Hero-Danucci-YF.png";
 
 const Destacados = () => {
     return(

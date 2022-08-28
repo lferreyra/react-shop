@@ -1,8 +1,6 @@
 import React from "react";
 import fb from "./imagenes/SM-RRSS-04.png";
 import ig from "./imagenes/SM-RRSS-03.png";
-import yt from "./imagenes/SM-RRSS-02.png";
-import tw from "./imagenes/SM-RRSS-01.png";
 
 const Footer = () => {
     return (
@@ -10,17 +8,15 @@ const Footer = () => {
         <div className="container pt-5"> 
             <div className="row text-white">
             <hr />
-                <div className="col-md-6">
-                <p>TM © 2021 Burger King Corporation. Todos los derechos reservados.</p>    
+                <div className="col col-lg-10">
+                <p>TM © 2017 Danucci S.A. Todos los derechos reservados.</p>    
                 </div>
-                <div className="col-md-6">
-                    <img src={fb} width="24" alt="Facebook" />;
-                    <img scr={ig} width="24" alt="Instagram" />;
-                    <img scr={yt} width="24" alt="Youtube" />;
-                    <img scr={tw} width="24" alt="Twitter" />;
+               
+                <div className="col col-lg-1 ">
+                    <img src={fb} width="24" alt="Facebook" href="https://www.facebook.com/DanucciOK/" />
+                    <img src={ig} width="24" alt="Instagram" href="https://www.instagram.com/danucciok/?hl=es" />
                 </div>
             </div>
-
         </div>
       </div>    
     )
