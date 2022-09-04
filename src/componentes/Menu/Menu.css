@@ -1,0 +1,7 @@
+.contenedor_menu {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+}
+

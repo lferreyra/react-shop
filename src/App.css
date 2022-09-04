@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.fondo_amarillo {
+  background: white !important;
+
+}
+
+.link_header {
+  color: black;
+  font-weight: bold;
+}
+
+.fondo_app {
+  background-color: pink;
+}
+
+.fondo_footer {
+  background-color: black;
+}
+
+.h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
