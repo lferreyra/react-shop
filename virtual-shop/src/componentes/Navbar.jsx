@@ -1,6 +1,7 @@
 import React from "react";
 import logo from ".//imagenes/logoDANUCCI.png";
-import Carrito from "./imagenes/carrito.png";
+import CartWidget from "./CartWidget";
+
 
 const Navbar = () => {
     return(
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <a className="nav-link link_header" href="#">Contacto</a>
                 </li>
                 <li >
-                <a className="nav-link link_header" href=""><img src={Carrito} width="20" alt="Carrito" /></a>
+                <CartWidget />
                 </li>
                 
             </ul>

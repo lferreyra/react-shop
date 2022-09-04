@@ -1,14 +1,14 @@
 import './App.css';
-import CartWidjet from './componentes/CartWidjet';
 import Destacados from './componentes/Destacados';
 import Footer from './componentes/footer';
+import ItemCount from './componentes/ItemCount';
+import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
 import Promoapp from './componentes/Promoapp';
 import Cupones from './componentes/Promos';
 
 function App() {
 
-  const productos = ["Colchón de Frutas", "Jelly", "Yogur Frutilla", "Yogur Vainilla"];
 
   
 
@@ -23,8 +23,8 @@ function App() {
       <Destacados /> 
       
       <h5>Lista De Productos</h5>
-      <CartWidjet items={productos} titulo="CartWidjet" /> 
-      
+      <ItemListContainer />
+      <ItemCount stock={5} initial={1} onadd={0}/>
       <Cupones />
       <Promoapp />
       <Footer />
