@@ -4,7 +4,7 @@ import Footer from './componentes/footer';
 import ItemCount from './componentes/ItemCount';
 import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
-import PromoApp from "../src/componentes/Promoapp";
+import PromoApp from './componentes/Promoapp';
 //import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 
