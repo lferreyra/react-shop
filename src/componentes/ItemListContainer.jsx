@@ -1,17 +1,17 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import ItemList from './ItemList';
+import ItemDetail from './ItemDetail';
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
             useEffect(() => {
                 const productos = [
-                        {id:1, "nombre":"Colchón de Frutas", "descripción":"Trozos de pera, durazno y ananá, con una suave capa crema descremada y crocante granola con miel que lo completan todo.", "peso":"350g.", "imagen":"https://i.postimg.cc/2SS3m799/10.png", "precio":350},
-                        {id:2, "nombre":"Jelly", "descripción":"Trozos de pera, durazno y ananá, con una deliciosa gelatina de cereza y una suave crema descremada para tu deleite.", "peso":"350g.", "imagen":"https://i.postimg.cc/R03FJVBc/11.png", "precio":350},
-                        {id:3, "nombre":"Yogur Mousse de Frutilla", "descripción":"Trozos de pera, durazno y ananá, con un suave mousse de yogur descremado y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/650TDmcG/9.png", "precio":350},
-                        {id:4, "nombre":"Yogur Mousse de Vainilla", "descripción":"Trozos de pera, durazno y ananá, con un suave mousse de yogur descremado y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/sxP1f6Rq/8.png", "precio":350},
-                        {id:5, "nombre":"Colchón de Frutas VEGANO", "descripción":"Trozos de pera, durazno y ananá, con un suave crema NO LACTEA y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/ZqqN7ShR/7.png", "precio":350},
+                        {id:1, "nombre":"Colchón de Frutas", "descripcion":"Trozos de pera, durazno y ananá, con una suave capa crema descremada y crocante granola con miel que lo completan todo.", "peso":"350g.", "imagen":"https://i.postimg.cc/2SS3m799/10.png", "precio":350, "stock":8},
+                        {id:2, "nombre":"Jelly", "descripcion":"Trozos de pera, durazno y ananá, con una deliciosa gelatina de cereza y una suave crema descremada para tu deleite.", "peso":"350g.", "imagen":"https://i.postimg.cc/R03FJVBc/11.png", "precio":350, "stock":5},
+                        {id:3, "nombre":"Yogur Mousse de Frutilla", "descripcion":"Trozos de pera, durazno y ananá, con un suave mousse de yogur descremado y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/650TDmcG/9.png", "precio":350, "stock":10},
+                        {id:4, "nombre":"Yogur Mousse de Vainilla", "descripcion":"Trozos de pera, durazno y ananá, con un suave mousse de yogur descremado y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/sxP1f6Rq/8.png", "precio":350, "stock":6},
+                        {id:5, "nombre":"Colchón de Frutas VEGANO", "descripcion":"Trozos de pera, durazno y ananá, con un suave crema NO LACTEA y crocante granola tostada.", "peso":"350g.", "imagen":"https://i.postimg.cc/ZqqN7ShR/7.png", "precio":350, "stock":9},
 
                     ];
 
@@ -28,12 +28,12 @@ const getProductos = new Promise((resolve) => {
         
             return (
                 <div className="container">
-                    <ItemList items={items} />
+                    <ItemDetail items={items} />
                 </div>
             )
         }
-
-export default ItemListContainer
+        
+export default ItemListContainer;
 
 
 
