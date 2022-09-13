@@ -4,7 +4,9 @@ import Footer from './componentes/footer';
 import ItemCount from './componentes/ItemCount';
 import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
-import Promoapp from './componentes/Promoapp';
+import PromoApp from "../src/componentes/Promoapp";
+//import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ItemDetailContainer from './componentes/ItemDetailContainer';
 
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
       
       <h3 className="text-center">Disfruta de nuestros productos</h3>
       <ItemListContainer />
+      <ItemDetailContainer />
       <ItemCount stock={5} initial={1} onadd={0}/>
-      <Promoapp />
+      <PromoApp />
+    
       <Footer />
     
    </div>
