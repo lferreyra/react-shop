@@ -1,6 +1,5 @@
 import './App.css';
-import ItemDetail from './componentes/ItemDetail';
-import ItemListContainer from './componentes/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer';
 
 
 
@@ -11,8 +10,8 @@ function App() {
 
       <div className='container-fluid  fondo_amarillo'>     
           <h3 className="text-center">Disfruta de nuestros productos</h3>
-          <ItemListContainer />
-          <ItemDetail />
+          <ItemDetailContainer />
+         
           
       
 

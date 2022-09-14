@@ -5,6 +5,7 @@ import Destacados from './componentes/Destacados';
 import Footer from './componentes/footer';
 import Navbar from './componentes/Navbar';
 import Promoapp from './componentes/Promoapp';
+import ItemListContainer from "./componentes/ItemListContainer"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <hr />
     <h2>¿Te gusta o te encanta?</h2>
     <Destacados />
+    <ItemListContainer />
     <App />
     <Promoapp />
     <Footer />
