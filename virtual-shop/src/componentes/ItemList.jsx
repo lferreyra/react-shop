@@ -3,16 +3,15 @@ import Item from  "./Item"
 
 const ItemList = ({items}) => {
     return (
-    <div className='row'>
+    <div className="row py-3">
         {items.map(item => (
-        <div key={item.id} className="col-md-4 py-3">
-            <Item id={item.id}  nombre={item.nombre} descripcion={item.descripcion} peso={item.peso} precio={item.precio} imagen={item.imagen} />
-        </div>)
+        <div className="col-md-2 ">
+            <Item item={item} />
+        </div>
+        )
     )}
     </div>
     )
 }   
-
-
 
 export default ItemList;

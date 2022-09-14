@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemDetail from './ItemDetail';
 import { useEffect, useState } from 'react';
-import { products } from 'react';
+import { products } from './Productos';
 
 
 function ItemDetailContainer() {
@@ -16,16 +16,16 @@ function ItemDetailContainer() {
         });
 
         getProduct()
-            .then((info) => {
+            .then((info)=>{
                 setItem(info);
             })
-            .catch((error) => {
+            .catch((error)=>{
                 console.log(error);
             });
     }, []);
 
     return (
-        <div style={{ minHeight: "70vh" }}>
+        <div style={{ minHeight: '70vh' }}>
             <ItemDetail item={item} />
         </div>
     );
