@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemDetail from './ItemDetail';
 import { useEffect, useState } from 'react';
-import { products } from 'react';
+import { products } from './Produtos';
 
 
 function ItemDetailContainer() {
