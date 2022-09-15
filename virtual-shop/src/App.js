@@ -1,24 +1,34 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import ItemDetail from './componentes/ItemDetail';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
-
+import ItemListContainer from './componentes/ItemListContainer';
+import Navbar from './componentes/Navbar';
+import Destacados from "./componentes/Destacados"
+import Footer from "./componentes/footer"
+import Promoapp from "./componentes/Promoapp"
 
 
 
 function App() {
 
   return (
+    <div className='container-fluid'>
+ <Navbar />
+ <Destacados />
+    <Routes>
+        <Route path='/menu' element={<ItemListContainer/>}/>
+        <Route path='' element={<details/>}/>
+        <Route path='' element={<ItemDetail/>}/>
+        <Route path='/menu/detail' element={<ItemDetailContainer/>}/>
+    </Routes>
+<Promoapp />
+<Footer />
 
-      <div className='container-fluid  fondo_amarillo'>     
-          <h3 className="text-center">Disfruta de nuestros productos</h3>
-          <ItemDetailContainer />
-         
-          
-      
 
-   </div>
-  );
-}
-
+</div>
+)}
 export default App;
 
 
