@@ -8,19 +8,19 @@ const Navbar = () => {
         <div className="container"> 
             <ul className="nav d-flex align-items-center">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="./"><img src={logo} width="48" alt="Logo" /></a> 
+                    <a className="nav-link active" aria-current="page" href="#"><img src={logo} width="48" alt="Logo" /></a> 
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="./menu">Pedí tu Danucci</a>
+                    <a className="nav-link link_header" href="#">Pedí tu Danucci</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="./menu/detail">Catalogo</a>
+                    <a className="nav-link link_header" href="#">Catalogo</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="./menu/detailContainer">Promos</a>
+                    <a className="nav-link link_header" href="#">Promos</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="./cupones">Contacto</a>
+                    <a className="nav-link link_header" href="#">Contacto</a>
                 </li>
                 <li >
                 <CartWidget />
