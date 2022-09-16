@@ -19,7 +19,7 @@ function App() {
  <Destacados />
     <Routes>
         <Route path='/menu' element={<ItemListContainer/>}/>
-        <Route path='' element={<details/>}/>
+        <Route path='' element={<Promoapp/>}/>
         <Route path='' element={<ItemDetail/>}/>
         <Route path='/menu/detail' element={<ItemDetailContainer/>}/>
     </Routes>
