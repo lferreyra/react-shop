@@ -1,5 +1,7 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import ItemDetail from './componentes/ItemDetail';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
@@ -15,10 +17,12 @@ function App() {
     <div className='container-fluid'>
  <Navbar />
  <Destacados />
- <ItemListContainer />
- <ItemDetailContainer />
-
-
+    <Routes>
+        <Route path='/menu' element={<ItemListContainer/>}/>
+        <Route path='' element={<details/>}/>
+        <Route path='' element={<ItemDetail/>}/>
+        <Route path='/menu/detail' element={<ItemDetailContainer/>}/>
+    </Routes>
 <Promoapp />
 <Footer />
 
